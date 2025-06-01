@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# 执行 user.sql
+psql -h localhost -U material -d material -f user.sql
+
+# 执行 spinning_process.sql
+psql -h localhost -U material -d material -f spinning_process.sql

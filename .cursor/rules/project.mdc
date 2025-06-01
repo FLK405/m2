@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- 改动的时候，尽可能只处理我交待的任务，不要对任务进行拓展，如果确实有需要，需要先跟我确认
+- 如果任务不够明确，请先跟我确认清楚所有的问题，然后再进行修改
+- 在创建新的目录之前先跟我确认
+- 保持良好的代码风格及习惯，并且写好详细的注释，注释使用 typescript 风格，而不是 jsdoc 风格
+
+- 数据库使用 postgresql 不要使用 mysql
+- 后端语言使用 nodejs + typescript + express
+- 前端使用原生的 webcomponents + typescript + vite 
+
+- 目录说明:
+```bash
+├── client # 前端
+├── db # 数所库脚本
+├── docs # 文档
+├── README.MD # 项目说明
+└── server # 后端
+```
+
+# 客户端说明
+
+- 项目使用传统的多页结构，而不是单页 app
+- 使用 css module 来处理样式
+- 服务端的接口命名为 rpc 风格，而不使用 restful 风格，并且所有的 api 都以 /api/ 开头

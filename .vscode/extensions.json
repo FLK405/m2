@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "streetsidesoftware.code-spell-checker",
+        "bierner.lit-html",
+        "oderwat.indent-rainbow",
+        "stagewise.stagewise-vscode-extension",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ]
+}
