@@ -1,6 +1,9 @@
 import express from "express";
 import spinningProcessRoutes from "./spinning_process/index.js";
 import userRoutes from "./user/index.js";
+import fiberPerformanceRouter from "./fiber_performance/index.js";
+import microstructureRouter from "./microstructure_characteristics/index.js"; // Added import
+import resinInterfacePerformanceRouter from "./resin_interface_performance/index.js"; // Added import
 
 const app = express();
 const PORT = 8080;
@@ -19,6 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 // 注册路由
 app.use("/api/user", userRoutes);
 app.use("/api", spinningProcessRoutes);
+app.use("/api/fiber_performance", fiberPerformanceRouter);
+app.use("/api/microstructure", microstructureRouter); // Added route
+app.use("/api/resin_interface_performance", resinInterfacePerformanceRouter); // Added route
 
 // 基本路由
 app.get("/", (_req, res) => {

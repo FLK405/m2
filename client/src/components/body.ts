@@ -3,6 +3,8 @@ import { html } from "../utils.js";
 import "./home-content.js";
 import "./nav.js";
 import "./resin-spinning-content.js";
+import "./fiber-performance-content.js"; // Added import
+import "./microstructure-characteristics-content.js"; // Added import
 
 const template = html`
     <style>
@@ -68,10 +70,12 @@ export class Body extends HTMLElement {
                 container.appendChild(document.createElement("resin-spinning-content"));
                 break;
             case "/fiber-properties":
-                container.textContent = "纤维性能内容";
+                // container.textContent = "纤维性能内容"; // Replaced this
+                container.appendChild(document.createElement("fiber-performance-content"));
                 break;
             case "/microstructure":
-                container.textContent = "微观结构特征内容";
+                // container.textContent = "微观结构特征内容"; // Replaced this
+                container.appendChild(document.createElement("microstructure-characteristics-content"));
                 break;
             case "/resin-interface":
                 container.textContent = "树脂及界面性能内容";
